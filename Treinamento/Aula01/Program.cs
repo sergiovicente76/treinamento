@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aula01.Model
+using Aula01.Model;
 
 namespace Aula01
 {
@@ -13,10 +9,10 @@ namespace Aula01
         {
             Console.WriteLine(o.ToString());
         }
-        public static void Show(Local local)
+        public static void Show(IInterface Iinterface)
         {
-            Console.WriteLine("{0} - {1}", local.Code, local.Size);
-            local.Harvest();
+            Console.WriteLine("{0} - {1}", Iinterface.Code, Iinterface.Size);
+            Iinterface.Harvest();
         }
 
 
@@ -42,7 +38,7 @@ namespace Aula01
             Field field = new Field();
             field.Code = "F1";
             field.Size = 10;
-            field.Culture = "Sugar Cane"
+            field.Culture = "Sugar Cane";
 
 
 

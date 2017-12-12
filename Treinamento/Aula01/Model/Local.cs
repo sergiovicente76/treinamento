@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Aula01.Model
 {
@@ -10,7 +7,7 @@ namespace Aula01.Model
     {
         public string Code { get; set; }
 
-        public int Size { get; set; } - 100;
+        public int Size { get; set; } = 100;
 
         public Local()
         {
@@ -22,12 +19,9 @@ namespace Aula01.Model
             Code = code;
             Size = size;
         }
-        public virtual void Harvest()
-        {
-
-        }
+        
     }
-    class Sector : Local
+    class Sector : Local, IInterface
     {
     
 
@@ -37,26 +31,37 @@ namespace Aula01.Model
         {
             
         }
-        public override void Harvest()
+        public void Harvest()
         {
             Console.WriteLine("Harvest Sector {0} ", Code);
         }
     }
 
-    class Farm : Local
+    class Farm : Local, IInterface
     {
 
 
         public Block[] Blocks { get; set; }
+
+        public void Harvest()
+        {
+            Console.WriteLine("Harvest Farm {0} ", Code);
+        }
     }
 
-    class Block : Local
+    class Block : Local, IInterface
     {
 
 
         public Field[] Fields { get; set; }
+
+        public void Harvest()
+        {
+            Console.WriteLine("Harvest Block {0} ", Code);
+        }
     }
-    class Field : Local
+    class Field : Local, IInterface
+
     {
        
 
@@ -75,6 +80,11 @@ namespace Aula01.Model
         public void Plant(string culture)
         {
             Culture = culture;
+        }
+
+        public void Harvest()
+        {
+            Console.WriteLine("Harvest Field {0} - {1} ", Code, Culture);
         }
 
     }
