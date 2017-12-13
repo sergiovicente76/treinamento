@@ -42,7 +42,7 @@ namespace Aula02
         }
         static void Main(string[] args)
         {
-            Conta c = new ContaCorrente();
+            Conta c = new ContaCorrente(0145, 0121065);
 
             c.Depositar(100m);
             c.Sacar(30m);
