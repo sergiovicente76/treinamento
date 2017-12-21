@@ -10,7 +10,7 @@ namespace Aula02.Model
     public class Item
     {
 
-        public TipoItem Tip { get; set; }
+        public TipoItem Tipo { get; set; }
 
         public DateTime Data { get; set; }
 
@@ -22,7 +22,7 @@ namespace Aula02.Model
         {
             //var culture = CultureInfo.GetCultureInfo("en-Uk");
                 
-            return $"{Data.ToString("dd-MM-yyyy HH:mm")} - {Valor.ToString("C2")} - Saldo: {Saldo.ToString("C2")}";
+            return $"Tipo: {Tipo.ToString()} - {Data.ToString("dd-MM-yyyy HH:mm")} - {Valor.ToString("C2")} - Saldo: {Saldo.ToString("C2")}";
             
         }
 

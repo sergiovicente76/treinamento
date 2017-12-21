@@ -24,6 +24,7 @@ namespace Aula02.Model
             {
                 Data = DateTime.Now,
                 Valor = valor ,
+                Tipo = TipoItem.Deposito,
                 Saldo = this.Saldo
             });
         }
@@ -36,6 +37,7 @@ namespace Aula02.Model
             {
                 Data = DateTime.Now,
                 Valor = valor * -1,
+                Tipo = TipoItem.Saque,
                 Saldo = this.Saldo
             });
         }

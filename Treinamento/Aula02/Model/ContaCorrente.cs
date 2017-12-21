@@ -16,6 +16,8 @@ namespace Aula02.Model
 
         }
 
+        private const decimal CPMF = 0.001m;
+
         private void TributarImposto(decimal valor)
         {
             var imposto = (valor * CPMF);
@@ -26,11 +28,14 @@ namespace Aula02.Model
             {
                 Data = DateTime.Now,
                 Saldo = this.Saldo,
+                Tipo = TipoItem.Imposto,
                 Valor = imposto * -1
             });
         }
 
-        private const decimal CPMF = 0.001m;
+        
+
+        
 
         public override void Sacar(decimal valor)
         {

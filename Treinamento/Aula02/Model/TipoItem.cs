@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace Aula02.Model
 {
-    public Enum TipoItem
+    public enum TipoItem
     {
         Saque = 1,
 
         Deposito = 2,
+
+        Imposto = 3,
+        Rendimento = 4,
+        Juros = 5
+
 
     }
 }
