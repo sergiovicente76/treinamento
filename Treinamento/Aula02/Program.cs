@@ -51,14 +51,66 @@ namespace Aula02
         static void Main(string[] args)
         {
 
+            /*
+             * var name2 = "1,2,3,4,5,6,7,8,9,0";
+
+            var c = name2.Split(',');
+
+            var k = "10";
+
+            int p;
+
+            int.TryParse(k, out p);
+            {
+                Console.WriteLine(p); 
+            }
+
+            double d = (double) k;
+
+            for (int i = 0; i < c.Length; i++)
+            {
+                var text = c[i];
+
+                var value = Convert.ToInt32(text);
+
+                var value10percent = value + (value * 0.1);
+
+                Console.WriteLine(value10percent);
+            }
+            */
+            /*
             var name = "Sergio Fernando";
 
-            var a = name.Split(" ");
+            var name2 = "1,2,3,4,5,6,7,8,9,0";
+
+            var c = name2.Split(',');
+             
+
+            var d = string.Join(";", c);
+
+            
+
+            var e = name2.Replace(",", ";");
+
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+
+
+            string lastName = default(string);
+
+            int i;
+
+            bool m;
+            
+            var a = name.Split(' ');
 
             var b = string.Join(";", a);
+            */
 
-            var fullName = String
+            /*
+            var fullName = String;
 
+            
             int[] numbers = { 1, 2, 3, 4, 5 };
 
             string a = "Letra A";
@@ -77,7 +129,7 @@ namespace Aula02
             sb.Insert(0, "Sr.");
 
             Console.WriteLine(sb.ToString());
-
+            
 
             try
             {
@@ -104,7 +156,7 @@ namespace Aula02
             {
                 Console.WriteLine("Programa Excecutado");
             }
-
+            */
             /*
             int i = 10;
             Console.Writeline("Input a number:");
@@ -121,7 +173,7 @@ namespace Aula02
             */
             
             
-            /*
+            
             Conta c = new ContaCorrente(0145, 0121065);
 
             c.Depositar(100m);
@@ -132,7 +184,7 @@ namespace Aula02
             ImprimirExtrato(c);
 
 
-    */
+    
             Console.ReadKey();
         }
     }

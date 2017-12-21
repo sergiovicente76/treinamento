@@ -9,15 +9,20 @@ namespace Aula02.Model
 {
     public class Item
     {
+
+        public TipoItem Tip { get; set; }
+
         public DateTime Data { get; set; }
 
         public decimal Valor { get; set; }
+
+        public decimal Saldo { get; set; }
 
         public override string ToString()
         {
             //var culture = CultureInfo.GetCultureInfo("en-Uk");
                 
-            return $"{Data.ToString("dd-MM-yyyy HH:mm")} - {Valor.ToString("C2")}";
+            return $"{Data.ToString("dd-MM-yyyy HH:mm")} - {Valor.ToString("C2")} - Saldo: {Saldo.ToString("C2")}";
             
         }
 
